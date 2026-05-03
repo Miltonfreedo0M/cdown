@@ -11,8 +11,8 @@
     :root {
       --bg: #0a0a0f;
       --surface: #12121a;
-      --accent: #c8f04a;
-      --accent2: #5af0c8;
+      --accent: #ff3b3b;
+      --accent2: #ff7a5a;
       --text: #e8e8e0;
       --muted: #555566;
       --border: #1e1e2e;
@@ -51,7 +51,7 @@
       width: 600px;
       height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(200,240,74,0.06) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(255,59,59,0.08) 0%, transparent 70%);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -141,8 +141,8 @@
 
     .unit:first-child .digits {
       color: var(--accent);
-      border-color: rgba(200,240,74,0.3);
-      box-shadow: 0 0 30px rgba(200,240,74,0.06), inset 0 0 20px rgba(200,240,74,0.03);
+      border-color: rgba(255,59,59,0.3);
+      box-shadow: 0 0 30px rgba(255,59,59,0.08), inset 0 0 20px rgba(255,59,59,0.04);
     }
 
     .unit-label {
@@ -253,7 +253,7 @@
 
     <div class="progress-wrap">
       <div class="progress-meta">
-        <span id="elapsed-label">elapsed</span>
+        <span id="elapsed-label">mar 11 2026 ——————— mar 11 2030</span>
         <span id="pct-label">0%</span>
       </div>
       <div class="progress-bar">
@@ -266,7 +266,7 @@
 
   <script>
     const TARGET = new Date('2030-03-11T12:00:00').getTime();
-    const START  = new Date('2025-01-01T00:00:00').getTime(); // reference start for progress bar
+    const START  = new Date('2026-03-11T12:00:00').getTime(); // start of residential period
 
     const pad = (n, w = 2) => String(Math.floor(n)).padStart(w, '0');
 
